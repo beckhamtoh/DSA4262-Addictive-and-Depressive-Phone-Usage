@@ -1,0 +1,52 @@
+Section,Question / Feature,Response Type / Scale,Notes
+Demographics,Age,Numeric (18–25),
+,Gender,Multiple choice: Male / Female / Non-binary / Other / Prefer not to say,Optional for fairness analysis
+,Current status,Multiple choice: Student / Working full-time / Working part-time / Unemployed / Other,remove? since we are looking at university students
+,Field of study / work (optional),Short text,Useful for descriptive analysis only; not essential for modelling
+Smartphone Usage Exposure,"On average, how much time did you spend using your smartphone per day in the last 2 weeks?",Multiple choice: <2h / 2–4h / 4–6h / 6–8h / >8h,Core usage intensity feature
+,How often do you check your phone in a typical day? (estimate),Multiple choice: <20 / 20–50 / 50–100 / >100,Better as categories than free numeric
+,How soon do you usually check your phone after waking up?,Multiple choice: Immediately / Within 5 min / 5–30 min / >30 min,Captures habitual dependence
+,How often do you use your phone after 11 PM?,Likert 1–5: Never / Rarely / Sometimes / Often / Almost every night,Important sleep-related risk feature
+,When do you usually stop using your phone at night?,Multiple choice: Before 10 PM / 10–11 PM / 11 PM–12 AM / 12–1 AM / After 1 AM,Can be correlated with late-night use; keep if you want more timing detail
+App Usage Patterns,Which categories of apps do you use the most? (Select up to 3),Multiple choice: Social media / Messaging / Video or streaming / Gaming / Productivity or study / Web browsing / Shopping / Other,Easier and safer than asking exact app names
+,Approximately how much time per day do you spend on social media apps?,Multiple choice: <30 min / 30–60 min / 1–2h / 2–4h / >4h,Strong digital overuse indicator
+,Approximately how much time per day do you spend watching short-form videos (TikTok/Reels/YouTube Shorts)?,Multiple choice: None / <30 min / 30–60 min / 1–2h / >2h,Potentially redundant with social media time in shorter version
+Context of Phone Use,I use my phone during meals.,Likert 1–5: Never / Rarely / Sometimes / Often / Always,Measures inappropriate-context use
+,"I use my phone during lectures, meetings, or work.",Likert 1–5,
+,I check my phone while studying or working on tasks.,Likert 1–5,Similar to work/lecture item but still useful
+,Notifications interrupt my work or concentration.,Likert 1–5,Captures attentional disruption
+,I check my phone while talking to friends or family in person.,Likert 1–5,"Useful behaviourally, but weaker in shorter version"
+Emotional Triggers for Phone Use,I use my phone when I feel bored.,Likert 1–5: Strongly Disagree / Disagree / Neutral / Agree / Strongly Agree,Strong trigger feature
+,I use my phone when I feel stressed.,Likert 1–5,Strong emotional coping signal
+,I use my phone to avoid doing difficult tasks.,Likert 1–5,Captures procrastination / avoidance
+,I use my phone when I feel lonely.,Likert 1–5,Suggested for removal in shorter version: weaker predictor than boredom/stress and may overlap conceptually
+,I use my phone to distract myself from negative emotions.,Likert 1–5,"Suggested for removal in shorter version: overlaps with stress coping, may create redundancy / multicollinearity"
+Sleep and Night Disruption,I use my phone in bed before going to sleep.,Likert 1–5: Never / Rarely / Sometimes / Often / Almost every night,
+,Phone use delays the time I go to sleep.,Likert 1–5,Strong behavioural risk signal
+,Notifications wake me up at night.,Likert 1–5,
+,I wake up during the night to check my phone.,Likert 1–5,Important sleep disruption feature
+,How would you rate your sleep quality over the past 2 weeks?,Multiple choice: Very poor / Poor / Average / Good / Very good,Useful descriptively; may overlap with PHQ-9 sleep item
+Self-Regulation and Control,I unlock my phone without a clear reason.,Likert 1–5: Never / Rarely / Sometimes / Often / Very Often,Captures automatic checking
+,I continue using my phone longer than I intended.,Likert 1–5,Loss-of-control feature
+,I try to reduce my phone use but fail.,Likert 1–5,Important self-control signal
+,I feel uncomfortable when I cannot access my phone.,Likert 1–5,Can overlap with SAS-SV dependence items
+,I feel that my phone use is hard to control.,Likert 1–5,Broad control item; may overlap with SAS-SV
+Target Variable (SAS-SV),I miss planned work due to smartphone use.,Likert 1–6,"1 = Strongly Disagree, 2 = Disagree, 3 = Weakly disagree, 4 = Weakly agree, 5 = Agree, 6 = Strongly Agree"
+,"I have a hard time concentrating in class, while doing assignments, or while working due to smartphone use.",Likert 1–6,
+,I feel pain in my wrists or at the back of my neck while using a smartphone.,Likert 1–6,
+,I wouldn’t be able to stand not having a smartphone.,Likert 1–6,
+,I feel impatient and fretful when I am not holding my smartphone.,Likert 1–6,
+,I have my smartphone in my mind even when I am not using it.,Likert 1–6,
+,I will never give up using my smartphone even when my daily life is affected by it.,Likert 1–6,
+,I constantly check my smartphone so as not to miss conversations or notifications.,Likert 1–6,
+,I use my smartphone longer than I had intended.,Likert 1–6,
+,People around me tell me that I use my smartphone too much.,Likert 1–6,Main prediction target label comes from total SAS-SV score
+Mental Health Screening (PHQ-9),Little interest or pleasure in doing things,Likert 0–3,"0 = Not at all, 1 = Several days, 2 = More than half the days, 3 = Nearly every day"
+,"Feeling down, depressed, or hopeless",Likert 0–3,
+,"Trouble falling or staying asleep, or sleeping too much",Likert 0–3,
+,Feeling tired or having little energy,Likert 0–3,
+,Poor appetite or overeating,Likert 0–3,
+,Feeling bad about yourself — or that you are a failure or have let yourself or your family down,Likert 0–3,
+,"Trouble concentrating on things, such as reading or watching television",Likert 0–3,
+,"Moving or speaking so slowly that other people could have noticed, or the opposite — being fidgety or restless",Likert 0–3,
+,Thoughts that you would be better off dead or of hurting yourself in some way,Likert 0–3,Safety escalation item

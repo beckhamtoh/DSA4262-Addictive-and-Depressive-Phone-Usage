@@ -1,0 +1,12 @@
+Survey Summary,Unnamed: 1,Unnamed: 2,Unnamed: 3
+Section,Number of Questions,Number of Questions (minus yellow highlighted),Aim of Section
+Demographics,4,3,Describe the participant profile and support subgroup analysis such as student vs working respondents.
+Smartphone Usage Exposure,5,5,"Measure overall intensity, frequency, and timing of smartphone use as core behavioural exposure features."
+App Usage Patterns,3,2,"Identify the main app categories and content types driving screen time, especially social media and short-form video use."
+Context of Phone Use,5,4,"Capture phone use in inappropriate or disruptive situations such as meals, work, study, and face-to-face interactions."
+Emotional Triggers for Phone Use,5,2,"Measure emotional and motivational triggers such as boredom, stress, avoidance, loneliness, and negative-emotion coping."
+Sleep and Night Disruption,5,4,"Assess whether phone use affects sleep timing, nighttime awakenings, and overall sleep-related disruption."
+Self-Regulation and Control,5,3,"Measure loss of control, compulsive checking, and difficulty reducing phone use."
+Target Variable (SAS-SV),10,10,Serve as the primary problematic smartphone use label for modelling and risk classification.
+Mental Health Screening (PHQ-9),9,9,Provide a secondary mental health severity and safety signal for escalation and intervention design.
+Total,51,42,Total number of questions currently listed in the Survey Questions worksheet.
