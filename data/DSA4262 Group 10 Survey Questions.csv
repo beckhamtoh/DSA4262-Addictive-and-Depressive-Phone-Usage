@@ -1,0 +1,47 @@
+Question,Section,Question / Feature,Response Type / Scale,Notes
+1,Demographics,Age,Numeric (18–25),
+2,,Gender,Multiple choice: Male / Female / Non-binary / Other / Prefer not to say,Optional for fairness analysis
+3,,Occupational / Educational Status,Multiple choice: Student / Employed / Unemployed,
+4,Smartphone Usage Exposure,"On average, how much time did you spend using your smartphone per day in the last 2 weeks?",Multiple choice: <2h / 2–4h / 4–6h / 6–8h / >8h,Core usage intensity feature
+5,,How often do you check your phone in a typical day? (estimate), ,Better as categories than free numeric
+6,,How soon do you usually check your phone after waking up?,Multiple choice: Immediately / Within 5 min / 5–30 min / >30 min,Captures habitual dependence
+7,,How often do you use your phone after 11 PM?,Likert 1–5: Never / Rarely / Sometimes / Often / Almost every night,Important sleep-related risk feature
+8,,When do you usually stop using your phone at night?,Multiple choice: Before 10 PM / 10–11 PM / 11 PM–12 AM / 12–1 AM / After 1 AM,Can be correlated with late-night use; keep if you want more timing detail
+9,App Usage Patterns,Which categories of apps do you use the most? (Select up to 3),Multiple choice: Social media / Messaging / Video or streaming / Gaming / Productivity or study / Web browsing / Shopping / Other,Easier and safer than asking exact app names
+10,,Approximately how much time per day do you spend on social media apps?,Multiple choice: <30 min / 30–60 min / 1–2h / 2–4h / >4h,Strong digital overuse indicator
+11,Context of Phone Use,I use my phone during meals.,Likert 1–5: Never / Rarely / Sometimes / Often / Always,Measures inappropriate-context use
+12,,"I use my phone during lectures, meetings, or work.",Likert 1–5,
+13,,I check my phone while studying or working on tasks.,Likert 1–5,Similar to work/lecture item but still useful
+14,,Notifications interrupt my work or concentration.,Likert 1–5,Captures attentional disruption
+15,Emotional Triggers for Phone Use,I use my phone when I feel bored.,Likert 1–5: Strongly Disagree / Disagree / Neutral / Agree / Strongly Agree,Strong trigger feature
+16,,I use my phone when I feel stressed.,Likert 1–5,Strong emotional coping signal
+17,,I use my phone to distract myself from negative emotions.,Likert 1–5,"Suggested for removal in shorter version: overlaps with stress coping, may create redundancy / multicollinearity"
+18,Sleep and Night Disruption,I use my phone in bed before going to sleep.,Likert 1–5: Never / Rarely / Sometimes / Often / Almost every night,
+19,,Phone use delays the time I go to sleep.,Likert 1–5,Strong behavioural risk signal
+20,,Notifications wake me up at night.,Likert 1–5,
+21,,I wake up during the night to check my phone.,Likert 1–5,Important sleep disruption feature
+22,Self-Regulation and Control,I unlock my phone without a clear reason.,Likert 1–5: Never / Rarely / Sometimes / Often / Very Often,Captures automatic checking
+23,,I continue using my phone longer than I intended.,Likert 1–5,Loss-of-control feature
+24,,I try to reduce my phone use but fail.,Likert 1–5,Important self-control signal
+25,Target Variable (SAS-SV),I miss planned work due to smartphone use.,Likert 1–6,"1 = Strongly Disagree, 2 = Disagree, 3 = Weakly disagree, 4 = Weakly agree, 5 = Agree, 6 = Strongly Agree"
+26,,"I have a hard time concentrating in class, while doing assignments, or while working due to smartphone use.",Likert 1–6,
+27,,I feel pain in my wrists or at the back of my neck while using a smartphone.,Likert 1–6,
+28,,I wouldn’t be able to stand not having a smartphone.,Likert 1–6,
+29,,I feel impatient and fretful when I am not holding my smartphone.,Likert 1–6,
+30,,I have my smartphone in my mind even when I am not using it.,Likert 1–6,
+31,,I will never give up using my smartphone even when my daily life is affected by it.,Likert 1–6,
+32,,I constantly check my smartphone so as not to miss conversations or notifications.,Likert 1–6,
+33,,I use my smartphone longer than I had intended.,Likert 1–6,
+34,,People around me tell me that I use my smartphone too much.,Likert 1–6,Main prediction target label comes from total SAS-SV score
+35,Mental Health Screening (PHQ-9),Little interest or pleasure in doing things,Likert 0–3,"0 = Not at all, 1 = Several days, 2 = More than half the days, 3 = Nearly every day"
+36,,"Feeling down, depressed, or hopeless",Likert 0–3,
+37,,"Trouble falling or staying asleep, or sleeping too much",Likert 0–3,
+38,,Feeling tired or having little energy,Likert 0–3,
+39,,Poor appetite or overeating,Likert 0–3,
+40,,Feeling bad about yourself — or that you are a failure or have let yourself or your family down,Likert 0–3,
+41,,"Trouble concentrating on things, such as reading or watching television",Likert 0–3,
+42,,"Moving or speaking so slowly that other people could have noticed, or the opposite — being fidgety or restless",Likert 0–3,
+43,,Thoughts that you would be better off dead or of hurting yourself in some way,Likert 0–3,Safety escalation item
+,,,,
+,,,,
+,,,,
