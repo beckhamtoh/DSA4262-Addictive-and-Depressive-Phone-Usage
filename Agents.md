@@ -232,6 +232,33 @@ Pseudocode template:
 	- Main behavioural risk tier drives intervention workflow.
 	- PHQ-9 association estimate is validation/supporting evidence only.
 
+## G. Example users walkthrough (required final section)
+23. Add a section titled **Example users** after Engine 1 and Engine 2 outputs are complete.
+24. Select exactly **3 contrasting users** from the final table (for example: one low-tier, one moderate-tier, one high-tier, or any three profiles that meaningfully differ).
+25. For each selected user, show a compact per-user trace with at least:
+	- `row_id`
+	- Engine 1 output: `behavioural_risk_tier`
+	- Engine 1 domain profile: all domain score columns
+	- Engine 1 attribution: `top_driver_1`, `top_driver_2`, `top_driver_3`
+	- Engine 2 output: `phq9_association_risk_estimate`
+26. Add a short interpretation paragraph per user that explains:
+	- why Engine 1 placed the user in that behavioural tier,
+	- how Engine 2 probability compares with Engine 1 risk tier,
+	- whether signals are aligned (high-high / low-low) or mixed (for example high tier but moderate PHQ association).
+27. Add a final comparative summary across the 3 users that explicitly demonstrates:
+	- Engine 1 provides the primary intervention trigger and behavioural explanation,
+	- Engine 2 adds supporting mental-health association context,
+	- both engines together provide richer decision support than either engine alone.
+
+### Recommended implementation pattern for the notebook cell
+Use one code cell to:
+- create a sorted view of the final `signal_to_decision_df`,
+- pick 3 representative `row_id` values,
+- display those rows side-by-side,
+- print a concise text interpretation scaffold for each selected user.
+
+Use one markdown cell immediately after to write the human-readable interpretation and cross-user comparison.
+
 ---
 
 ## 4) Concrete domain mapping template for this dataset
@@ -258,6 +285,7 @@ The notebook is complete only if all are true:
 - Pipeline includes recoding, subscales, theory vs data-driven representations, risk tiers, interpretable PHQ model, and interpretation.
 - Model comparison includes why each model was chosen.
 - Evaluation includes CV, class balance strategy, threshold thinking, and required metrics (ROC-AUC, F1, recall, balanced accuracy).
+- Final notebook includes an **Example users** section with 3 contrasting users showing Engine 1 outputs + Engine 2 estimate and a comparative interpretation of how both engines work together.
 - Error analysis discusses FP vs FN trade-offs.
 - Final signal-to-decision table includes all required user-level outputs.
 - Notebook includes schema validation checks tied to actual CSV column names and expected ranges.
