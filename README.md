@@ -227,3 +227,8 @@ National University of Singapore, DSA4262 Group 10
 - Tian Junjie
 - Woo Qi Rui
 
+## Contributions
+
+- Group 10 members led project framing, survey design, analysis decisions, interpretation, and reporting.
+- GitHub Copilot contributed coding assistance for data processing workflows, notebook implementation, and model-building iterations.
+
