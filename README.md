@@ -151,8 +151,10 @@ The integrated signal-to-decision table (often named signal_to_decision_df in no
 	- Exploratory analysis and behavioural/depression signal exploration.
 - notebooks/behavioural_risk_phq9_validation.ipynb
 	- Main end-to-end notebook for Engine 1 and Engine 2 integration.
-- notebooks/model.ipynb and notebooks/modelling_9th_April.ipynb
-	- Alternative or development versions of modeling workflows and outputs.
+- notebooks/modelling_9th_April.ipynb
+	- Latest modeling notebook version.
+- notebooks/model.ipynb
+	- Earlier or alternative modeling workflow version.
 
 ## Setup
 
@@ -191,7 +193,7 @@ Recommended execution order:
 
 1. notebooks/data_processing.ipynb
 2. notebooks/eda.ipynb
-3. notebooks/behavioural_risk_phq9_validation.ipynb
+3. notebooks/modelling_9th_April.ipynb
 
 ## Utility Script
 
